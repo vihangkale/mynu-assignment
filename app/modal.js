@@ -22,6 +22,7 @@ function Modal() {
                 className="w-full h-4/5 rounded-lg"
                 width={100}
                 height={200}
+                alt="food item"
               />
               <div className="flex flex-col text-white p-3 h-1/5">
                 <div className="flex justify-between w-full items-center">

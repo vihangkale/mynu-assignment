@@ -85,7 +85,7 @@ export default async function Home() {
                       <Image
                         className="w-full max-h-[120px] rounded-lg"
                         src={src}
-                        alt="item"
+                        alt="item image"
                         width={188}
                         height={120}
                       />
