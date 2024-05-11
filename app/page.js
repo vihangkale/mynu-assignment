@@ -73,6 +73,7 @@ export default async function Home() {
                 const src = images[0]?.url ? images[0]?.url : image_sm;
                 return (
                   <Link
+                    key={_id}
                     href={`?modal=true&src=${src}&name=${formatText(
                       name
                     )}&price=${formatPrice(price)}&description=${description}`}
