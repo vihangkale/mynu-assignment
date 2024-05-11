@@ -24,7 +24,7 @@ export default async function Home() {
       <h1 className="text-3xl font-bold text-center text-white">Food Menu</h1>
       <div className="flex items-center gap-x-4 mt-4 overflow-auto px-4 py-2">
         {categories?.map(({ _id, name, image_big }) => (
-          <Link href={`#${_id}`}>
+          <Link href={`#${_id}`} key={_id}>
             <div className="flex flex-col gap-y-2" key={_id}>
               <Image
                 className="min-w-[100px] min-h-[70px] max-h-[70px] object-cover"
@@ -43,7 +43,7 @@ export default async function Home() {
       <div className="content mt-2 overflow-y-auto px-4">
         <div>
           {banners?.map((banner) => (
-            <div>
+            <div key={banner}>
               <Image
                 className="rounded-lg"
                 src={banner}
